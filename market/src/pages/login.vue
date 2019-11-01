@@ -44,7 +44,10 @@
                 } else {
                   // 响应成功回调3
                   if (response.data.length == 1) {
-                    alert("登录成功")
+                    this.$store.dispatch('actfunName',this.username)
+                    let users=this.$store.getters.showName
+                    localStorage.setItem('accessUser',users)
+                    window.location = "http://localhost:8080/#/person"
                   } else {
                     alert("用户名或密码错误")
                     this.username = "";
