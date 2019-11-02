@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" style="height: 100%;width: 100%">
     <router-view/>
   </div>
 </template>
@@ -11,5 +11,11 @@ export default {
 </script>
 
 <style>
-
+    @import "css/normalize.css";
+    .router-link-active{
+      text-decoration: none;
+    }
+    a {
+      text-decoration: none;
+    }
 </style>

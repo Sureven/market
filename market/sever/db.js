@@ -7,7 +7,12 @@ const loginSchema = mongoose.Schema({
   username:String,
   password : String
 });
+const goods = mongoose.Schema({
+  goodsname:String,
+  price : String
+});
 const Models = {
-  Login : mongoose.model('Login',loginSchema)
+  Login : mongoose.model('Login',loginSchema),
+  Goods :mongoose.model('Goods',goods)
 }
 module.exports = Models;
