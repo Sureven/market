@@ -4,6 +4,7 @@ import Login from  "../pages/login"
 import Register from  "../pages/register"
 import Person from "../pages/person"
 import Addgoods from "../pages/addgoods"
+import Shoppingcar from "../pages/shoppingcar"
 Vue.use(Router)
 
 export default new Router({
@@ -26,6 +27,10 @@ export default new Router({
         {
           path:"addgoods",
           component:Addgoods
+        },
+        {
+          path:"shoppingcar",
+          component:Shoppingcar
         }
         ]
     },

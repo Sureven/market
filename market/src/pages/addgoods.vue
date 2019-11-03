@@ -45,7 +45,7 @@
                   this.goodsname = '', this.price = ''
                 }else{
                   if(response.data=="createAccount successed"){
-                    alert("注册成功")
+                    alert("添加成功")
                     /*window.location = "http://localhost:8080/#/Login"*/
                   }
                 }

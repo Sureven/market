@@ -73,4 +73,13 @@ router.post('/person/addgoods',(req,res) => {
     }
   });
 });
+router.get('/person/shoppingcar',(req,res) => {
+  models.Goods.find((err,data) => {
+    if (err) {
+      res.send(err);
+    } else {
+      res.send(data);
+    }
+  });
+});
 module.exports = router;

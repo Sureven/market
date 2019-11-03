@@ -13,14 +13,14 @@
               <el-menu-item index="1-2">删除商品</el-menu-item>
             </el-menu-item-group>
             <el-menu-item-group title="购物车">
-              <el-menu-item index="1-3">购物车</el-menu-item>
+              <router-link to="/person/shoppingcar"><el-menu-item index="1-3">购物车</el-menu-item></router-link>
             </el-menu-item-group>
           </el-submenu>
           <el-menu-item index="2">
-            <tenplate slot="title">
+            <template slot="title">
               <i class="el-icon-menu"></i>
               <span>导航二</span>
-            </tenplate>
+            </template>
           </el-menu-item>
           <el-menu-item index="3">
             <template slot="title">
@@ -35,7 +35,7 @@
             <el-breadcrumb separator="/">
               <el-breadcrumb-item :to="{ path: '/person' }">首页</el-breadcrumb-item>
               <el-breadcrumb-item :to="{ path: '/person/addgoods' }">增加商品</el-breadcrumb-item>
-              <el-breadcrumb-item>购物车</el-breadcrumb-item>
+              <el-breadcrumb-item :to="{ path: '/person/shoppingcar' }">购物车</el-breadcrumb-item>
               <el-breadcrumb-item>购买记录</el-breadcrumb-item>
               <span style="float: right;margin-right: 50px">欢迎{{user}}</span>
             </el-breadcrumb>
